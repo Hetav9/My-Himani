@@ -3,64 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forever Us – Hima & Me</title>
+  <title>Happy 6 Months, Hima!</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    .typing {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid pink;
+      animation: typing 4s steps(40, end) forwards;
+    }
+  </style>
 </head>
 <body class="bg-pink-50 text-gray-800 font-sans">
-  <header class="bg-pink-200 p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center text-rose-700">Forever Us – Hima & Me</h1>
-    <p class="text-center text-sm text-rose-600 mt-1">A little corner of the internet for the love of my life</p>
-  </header>
 
-  <section class="p-6 max-w-3xl mx-auto">
-    <div class="text-center my-6">
-      <img src="https://i.imgur.com/LK6rjVJ.png" alt="Heart" class="w-20 mx-auto mb-4" />
-      <h2 class="text-2xl font-semibold text-rose-600">Our Story</h2>
-      <p class="mt-2 text-gray-700">
-        We were just little kids in second grade when fate brought us together. Years passed, friendship blossomed,
-        and on December 1st, 2024, my heart found its forever home – with you, Hima. You're my strength, my smile,
-        my favorite everything.
-      </p>
-    </div>
+  <!-- Header -->
+  <section class="text-center py-10 bg-pink-100 shadow-lg">
+    <h1 class="text-4xl font-bold">Happy 6 Months, Hima!</h1>
+    <p class="mt-2 text-xl">To my Gattuyyu, with endless love</p>
+  </section>
 
-    <div class="my-10">
-      <h2 class="text-xl font-semibold text-rose-600 mb-4 text-center">Moments That Made Us</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <img class="rounded-xl shadow-md" src="your-photo1.jpg" alt="Memory 1">
-        <img class="rounded-xl shadow-md" src="your-photo2.jpg" alt="Memory 2">
-        <img class="rounded-xl shadow-md" src="your-photo3.jpg" alt="Memory 3">
-        <img class="rounded-xl shadow-md" src="your-photo4.jpg" alt="Memory 4">
-      </div>
-      <p class="text-sm text-center text-gray-500 mt-2">*Replace with your beautiful photos together*</p>
-    </div>
+  <!-- Timeline -->
+  <section class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-4">Our Timeline</h2>
+    <ul class="space-y-4">
+      <li><strong>13th Nov, 2024</strong>: Reconnected after years.</li>
+      <li><strong>Late Nov</strong>: I realized how deeply you love me – I cried, truly.</li>
+      <li><strong>1st Dec, 2024</strong>: We officially became one.</li>
+      <li><strong>14th Dec</strong>: Our first real hug, lip to lip, endless magic.</li>
+      <li><strong>Nickname Era</strong>: Gattu, Battu, Kittu, Sweetu, Nanku, Sunshine, Gabbu...</li>
+      <li><strong>16th May</strong>: Hugged and laughed endlessly. A moment frozen in love.</li>
+    </ul>
+  </section>
 
-    <div class="my-10">
-      <h2 class="text-xl font-semibold text-rose-600 mb-4 text-center">My Promise to You</h2>
-      <p class="text-center text-gray-700 leading-relaxed">
-        I promise to hold your hand through every storm, laugh with you in every joy, and dream with you every night.
-        I’ll build a simple, beautiful life with you – full of books, bike rides, a cute Pomeranian, and endless love.
-        You are my queen, Hima, and this heart beats only for you.
-      </p>
-    </div>
-
-    <div class="my-10">
-      <h2 class="text-xl font-semibold text-rose-600 mb-4 text-center">One Day...</h2>
-      <ul class="list-disc list-inside text-gray-700">
-        <li>We'll travel the world together</li>
-        <li>Have our dream home full of laughter and love</li>
-        <li>Celebrate your birthday like it's a festival</li>
-        <li>Live a life where you never feel alone or unloved</li>
-      </ul>
-    </div>
-
-    <div class="text-center mt-12 mb-6">
-      <h2 class="text-2xl font-semibold text-rose-600">I Love You, Hima</h2>
-      <p class="text-gray-600 mt-2">– Yours forever</p>
+  <!-- Quote Carousel -->
+  <section class="p-6 bg-pink-200 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Things You Say That Melt Me</h2>
+    <div class="max-w-xl mx-auto bg-white p-4 rounded-xl shadow-md">
+      <p id="quote" class="italic text-lg">"You can add quotes here like 'I want to grow old with you.'" </p>
     </div>
   </section>
 
-  <footer class="bg-pink-100 text-center p-4 text-sm text-rose-500">
-    Made with endless love for Hima
+  <script>
+    const quotes = [
+      "You're my whole world, Nannu.",
+      "No matter what, I’ll always be yours.",
+      "You make even the toughest days beautiful.",
+      "I’ll hug you so tight, you’ll feel my heartbeat."
+    ];
+    let qIndex = 0;
+    setInterval(() => {
+      qIndex = (qIndex + 1) % quotes.length;
+      document.getElementById("quote").textContent = `"${quotes[qIndex]}"`;
+    }, 4000);
+  </script>
+
+  <!-- Promises -->
+  <section class="p-6 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Promises to You</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <li class="bg-white p-4 shadow rounded-lg">I'll always listen to your heart.</li>
+      <li class="bg-white p-4 shadow rounded-lg">I'll never stop calling you Gattuyyu.</li>
+      <li class="bg-white p-4 shadow rounded-lg">I'll hug you tighter each time we meet.</li>
+      <li class="bg-white p-4 shadow rounded-lg">I'll cry with you, laugh with you, grow with you.</li>
+      <li class="bg-white p-4 shadow rounded-lg">I'll never stop falling in love with you.</li>
+    </ul>
+  </section>
+
+  <!-- Photo Gallery Placeholder -->
+  <section class="p-6 bg-pink-100">
+    <h2 class="text-2xl font-semibold text-center mb-4">Our Memories</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow" alt="Your photo here"/>
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow" alt="Your photo here"/>
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow" alt="Your photo here"/>
+    </div>
+    <p class="text-center mt-2">You can add your real photos here later!</p>
+  </section>
+
+  <!-- Love Letter -->
+  <section class="p-6 max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-4">A Letter to You</h2>
+    <p class="text-lg typing text-pink-700">
+      Hima, you are the light in my darkness, the warmth in my winter, and the heartbeat of my every day.
+      These 6 months with you have shown me a love so deep, so true—I want forever with you.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 mt-10 text-sm text-gray-600">
+    Made with endless love by your Nannu Nannu
   </footer>
 </body>
 </html>
